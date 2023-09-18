@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body  class="light-theme">
+    <div class="calculator">
+        <div class="theme-toggle">
+            <i id="theme-icon" class="fas fa-sun"></i>
+        </div>
+        <input type="text" placeholder="0" id="inputBox">
+        <div>
+            <button onclick="clearInput()">AC</button>
+            <button onclick="deleteLastCharacter()">DEL</button>
+            <button onclick="appendToInput('%')">%</button>
+            <button class="operator" onclick="appendToInput('/')">/</button>
+        </div>
+        <div>
+            <button onclick="appendToInput('7')">7</button>
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button class="operator" onclick="appendToInput('*')">*</button>
+        </div>
+        <div>
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button class="operator" onclick="appendToInput('-')">-</button>
+        </div>
+        <div>
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button class="operator" onclick="appendToInput('+')">+</button>
+        </div>
+        <div>
+            <button onclick="appendToInput('00')">00</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button onclick="appendToInput('.')">.</button>
+            <button class="equalbtn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Calculator</p>
+        <p>❤ Made by Devilal Panchal 😎</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
